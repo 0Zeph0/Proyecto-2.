@@ -165,8 +165,8 @@ void Poblacion::CrossOver(){
         FirstIND.getGenes()[i] = SeconIND.getGenes()[i];
         SeconIND.getGenes()[i] = TempValue;
     }
-    cout << "Punto de culeo: " << crossOverPoint << endl;
-    cout << "despues de la culiada: " << endl;
+    cout << "Punto de cruce: " << crossOverPoint << endl;
+    cout << "despues del cruce: " << endl;
     cout << " Primer mono: " << endl;
     cout << " HP: " << FirstIND.getGenes()[0] << " ATK: " << FirstIND.getGenes()[1] << " AGI: " << FirstIND.getGenes()[2] << " MATK: " << FirstIND.getGenes()[3] << endl;
     cout << " Segundo mono: " << endl;
@@ -194,8 +194,8 @@ void Poblacion::Mutation(){
                 low = j;
             }
     }
-    cout << "indice culo: " << low << endl;
-    cout << "el mas mierda del primero: " << FirstIND.getGenes()[low] << endl;
+    cout << "indice 1: " << low << endl;
+    cout << "el mas malo del primero: " << FirstIND.getGenes()[low] << endl;
     if(FirstIND.getGenes()[low] < 25){
 
         FirstIND.setGenes(low, 45);
@@ -215,8 +215,8 @@ void Poblacion::Mutation(){
                 low = j;
             }
     }
-    cout << "el otro indice culo: " << low << endl;
-    cout << " el mas mierda del segundo: " << SeconIND.getGenes()[low] << endl;
+    cout << "el otro indice 2: " << low << endl;
+    cout << " el mas malo del segundo: " << SeconIND.getGenes()[low] << endl;
     if(SeconIND.getGenes()[low] < 25){
 
         SeconIND.setGenes(low, 45);
@@ -266,7 +266,7 @@ void Poblacion::addNewOffSpring(){
 
     //obtengo el index del mas malo...
     int ElMasMalo = getLowFitINDEX();
-    cout << " El mas mierda està en: " << ElMasMalo;
+    cout << " El mas malo està en: " << ElMasMalo;
 
     //aqui me fumo al debil y pongo al mas pichudo.
     BufferDeIndividuos[ElMasMalo] = getBestOffSpring();
