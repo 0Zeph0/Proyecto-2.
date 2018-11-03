@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1540266578 source:/home/roy/GeneticAlgorithm/main.cpp
+	<iostream>
+	"Individuo.h"
+	<stdlib.h>
+	<time.h>
+	<limits>
+	"Poblacion.h"
+
+1540267489 source:/home/roy/GeneticAlgorithm/src/Individuo.cpp
+	"Individuo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+
+1540267489 /home/roy/GeneticAlgorithm/include/Individuo.h
+	<stdlib.h>
+	<time.h>
+	<iostream>
+
+1540267512 source:/home/roy/GeneticAlgorithm/src/Poblacion.cpp
+	"Poblacion.h"
+	<limits>
+	"Individuo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+
+1540266555 /home/roy/GeneticAlgorithm/include/Poblacion.h
+	<cstddef>
+	<limits>
+	"Individuo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+
